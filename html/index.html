@@ -1,61 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>The code review</title>
-	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../css/style.css">
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The code review</title>
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
 
-<body>
+	<body>
+		<header id="header">
+				<h1>THE CODE REVIEW</h1>
+		</header>
 
-	<header class="main-header">
-			<h1 class="header-name">THE CODE REVIEW</h1>
-	</header>
+		<section class="subject">
+			<h1>Signup for our newsletter</h1>
+			<p>Get the latest news on how your code is doing right in your box</p>
+		</section>	
 
-	<section class="subject">
-	  <h1>Signup for our newsletter</h1>
-		<p>Get the latest news on how your code is doing right in your box</p>
-	</div>
+		<form>
+			<fieldset  class="contact-info">
+				<legend>Contact Information</legend>
+				<label for="name">Full Name</label>
+				<input type="text" id="name" name="name" placeholder="Required   ">
+				<label for="email">Email Address</label>
+				<input type="email" id="email" name="email" placeholder="Required   " >
+				<label for="telephone">Phone Number</label>
+				<input type="text" id="telephone" name="telephone" >
+				<label for="Adress">Street Address</label>
+				<input type="text" id="address" name="address" >
+				<label for="city">City</label>
+				<input type="text" id="city" name="city" >
+				<label for="state">State</label>
+				<select id="state" name="state">
+					<option value="none" class="choose-state">Choose State</option>
+					<option value="newyork">New York</option>
+				</select>
+				<label for="zip">Zip Code</label>		
+				<input type="text" id="zip" name="zip" >
+			</fieldset>
+			
+			<fieldset  class="newsletter">
+				<legend>Newsletter</legend>
+				<p>Select the newsletters you would like to recieve</p>
+				<input type="checkbox" id="html" name="html" >
+				<label for="html">HTML News</label><br>
+				<input type="checkbox" id="css" name="css" >
+				<label for="css">CSS News</label><br>
+				<input type="checkbox" id="javascript" name="javascript" >
+				<label for="javascript">Javascript News</label><br>
+				<p>Newsletter format</p>
+				<input type="radio" id="HTML" name="format" >
+				<label for="HTML">HTML</label><br>
+				<input type="radio" id="plain" name="format" >
+				<label for="city">Plain text</label><br>
+				<p>Other topics you'd like to hear about</p>
+				<textarea></textarea><br>
+				<button type="submit">Sign Up</button>
+			</fieldset>
+		</form>
+			
+		<footer>
+			<p>Copyright The Code Review</p>
+		</footer>
 
-	<form class="contact-info">
-	 <title>Contact Information</title>
-		<label for="name">Full Name</label>
-		<input type="text" id="name" name="name" value="Required"><br>
- 		<label for="email">Email Address</label>
-		<input type="text" id="email" name="email" value="Required" ><br>
-		<label for="phone">Phone Number</label>
-	  <input type="text" id="number" name="number" ><br>
-		<label for="Adress">Street Address</label>
-		<input type="text" id="address" name="address" ><br>
-		<label for="city">City</label>
-		<input type="text" id="city" name="city" ><br>
-		<label for="state">State</label>
-		<input type="text" id="state" name="state" ><br>
-		<label for="zip">Zip Code</label>		
-		<input type="text" id="label" name="label" ><br>
-	</form>
-
-	<form class="contact-info">
-	 <title>Newsletter</title>
-	  <p>Select the newsletters you would like to recieve</p>
-		<label for="html">HTML News</label>
-		<input type="radio" id="html" name="html" ><br>
- 		<label for="css">CSS News</label>
-		<input type="radio" id="css" name="css" ><br>
-		<label for="javascript">Javascript News</label>
-	  <input type="radio" id="javascript" name="javascript" ><br>
-		<p>Newsletter format</p>
-		<label for="HTML">HTML</label>
-		<input type="radio" id="HTML" name="HTML" ><br>
-		<label for="city">Plain text</label>
-		<input type="radio" id="plain" name="plain" ><br>
-		<p>Other topics you'd like to hear about</p>
-		<textarea></textarea><br>
-		<button type="submit"> Sign Up</button>
-	</form>
-
-	
-</body>
+	</body>
 </html>
