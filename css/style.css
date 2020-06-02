@@ -12,6 +12,10 @@ body{
 	text-align: center;
 }
 
+main {
+	background-color: beige;
+}
+
  header {
 	background-color:rgb(2, 27, 70);
 	height: 5rem;
@@ -19,7 +23,7 @@ body{
 	width: 100%;
 }
 
-header h1 {
+header h2 {
 	line-height: 5rem;
 	color: white;
 	font-size: 1.2rem;
@@ -58,14 +62,16 @@ fieldset {
  font-size: 1.5rem;
  font-weight: bolder;
  text-align: left;
+ margin-left: 3%;
 }
 
 .contact-info input {
 	height:3rem;
-	width: 100%;
-	background-color: whitesmoke;
+	width: 94%;
+	background-color: white;
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
+	margin-left: 3%;
 	border: none;
 	border-radius: 5px;
 	font-size: 100%;
@@ -74,14 +80,16 @@ fieldset {
 
 input:focus {
 	border: 2px solid rgb(2, 27, 70);
+	transition: 0.3s;
 }
 
 .contact-info select {
 	height:3rem;
-	width: 100%;
-	background-color: whitesmoke;
+	width: 94%;
+	background-color: white;
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
+	margin-left: 3%;
 	border: none;
 	border-radius: 5px;
 	outline: 0;
@@ -89,50 +97,59 @@ input:focus {
 
 select:focus {
 	border: 2px solid rgb(2, 27, 70);
+	transition: 0.3s;
 }
 
 .contact-info label {
-	display: block;
+	margin-left: 3%;
 }
 
+.zipcode {
+	display: block;
+}
 input[id="zip"] {
 	width: 50%;
 }
 
 select {
+	transition: 0.3s;
   color:rgb(200, 200, 200);
 }
 
 ::placeholder {
-	text-align: right;
+	position: relative;
+	left: 70%;
 	font-style: italic;
 	color: rgb(200, 200, 200);
+	}
+	
+	.newsletter {
+		text-align: left;
 	}
 
 .newsletter legend {
 	font-size: 1.5rem;
 	font-weight: bolder;
 	text-align: left;
-}
-
-.newsletter {
-	text-align: left;
+	margin-left: 3%;
 }
 
 .newsletter p {
 	padding-top: 1.2rem;
 	padding-bottom: 0.5rem;
+	margin-left: 3%;
 }
 
 .newsletter input {
 	position: relative;
 	margin-left: 0px;
+	margin-left: 3%;
 }
 
 .newsletter textarea {
 	height:5rem;
-	width: 100%;
-	background-color: whitesmoke;
+	width: 94%;
+	background-color: white;
 	border: none;
 	border-radius: 5px;
 	resize: none;
@@ -140,6 +157,8 @@ select {
 	margin-bottom: 20px;
 	font-size: 100%;
 	outline: 0;
+	transition: 0.3s;
+	margin-left: 3%;
 }
 
 textarea:focus {
@@ -148,7 +167,7 @@ textarea:focus {
 
 button {	
 	height:4rem;
-	width: 100%;
+	width: 94%;
 	background-color: rgb(123, 173, 154);
 	color: white;
 	border: none;
@@ -157,7 +176,8 @@ button {
 	font-family: 'Cormorant Garamond', serif;
 	font-weight: bold;
 	outline: none; 
-	
+	margin-left: 3%;
+	margin-bottom: 1.5rem;
 }
 
 button:active {
@@ -186,18 +206,22 @@ footer p{
 	.container {
 		display: flex;
 		align-items: center;
+		margin-right: 3%;
 	}
 
 	.container input,
 	.container select {
 		width: 70%;
-    flex-grow: 1;
+		flex-grow: 1;
 	}
 
 	.container label {
 		width: 25%;
 	}
 
+	::placeholder {
+		left: 80%;
+		}
 	#zip {
 		flex-grow: 0;
 		width: 30%;
